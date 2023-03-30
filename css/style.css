@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+	text-transform: capitalize;
+	padding: 0;
+	margin: 0;
+	transition: 0.3s;
+}
+html {
+	font-size: 62.5%;
+}
+@media (max-width: 767px) {
+	html {
+		font-size: 50%;
+	}
+}
+body {
+	background-color: #f2ebe3;
+}
+.card {
+	max-width: 65rem;
+	grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 767px) {
+	.card {
+		grid-template-columns: 1fr;
+		margin-top: 50px;
+		width: 92%;
+		text-align: center;
+	}
+}
+.img-container {
+	width: 100%;
+}
+img {
+	width: 100%;
+	border-radius: 10px 0 0 10px;
+}
+@media (max-width: 767px) {
+	img {
+		border-radius: 10px 10px 0 0 !important;
+		overflow: hidden;
+		width: 108.6%!important;
+		/* display: flex; */
+	}
+}
+.content {
+	height: 60%;
+}
+@media (max-width: 767px) {
+	.left {
+		width: 92%;
+	}
+}
+.right {
+	padding: 3.5rem;
+	width: 100%;
+}
+@media (max-width: 767px) {
+	.right {
+		width: 100%;
+		padding: 25px;
+	}
+}
+.right .head span {
+	color: hsl(228, 12%, 48%);
+	font-family: "Montserrat";
+	font-weight: 400;
+	font-size: 1.4rem;
+	letter-spacing: 5px;
+}
+.right h1 {
+	margin: 2.4rem 0;
+	font-size: 3.5rem;
+	line-height: 1;
+	font-family: "Fraunces";
+	font-weight: 700;
+	color: hsl(212, 21%, 14%);
+}
+.right p {
+	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.6;
+	font-family: "Montserrat";
+	color: hsl(228, 12%, 48%);
+}
+.right .shop .salary span {
+	font-size: 3.4rem;
+	font-family: "Fraunces";
+	color: hsl(158, 36%, 37%);
+	font-weight: 700;
+}
+.right .shop .salary span::before {
+	content: "$169.99";
+	position: absolute;
+	font-size: 1.4rem;
+	text-decoration: line-through;
+	color: hsl(228, 12%, 48%);
+	right: -70px;
+	font-weight: normal;
+}
+.right .shop .shop-button a {
+	background-color: hsl(158, 36%, 37%);
+	font-family: "Montserrat";
+	padding: 1.9rem;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-decoration: none;
+	margin-top: 30px;
+}
+.right .shop .shop-button a:hover {
+	background-color: #214538;
+}
+
+@media (max-width: 767px) {
+	.right .shop .shop-button {
+		margin-top: -20px;
+		margin-bottom: 10px;
+	}
+}
